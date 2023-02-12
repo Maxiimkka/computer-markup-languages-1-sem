@@ -1,0 +1,28 @@
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: Monotype Corsiva;
+   color: rebeccapurple;
+ }
+
+ .winter {
+   color: red;
+   font-family: 'Times New Roman';
+   font-size: 18pt;
+
+ }
+
+ .spring {
+   color: yellow;
+   font-family: 'Times New Roman';
+   font-size: 20pt;
+ }
+
+ .summer {
+   color: green;
+   font-family: 'Times New Roman';
+   font-size: 22pt;
+ }
