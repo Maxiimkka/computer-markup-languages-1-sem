@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="2.css" rel="stylesheet" media="(min-width:1281px)">
+  <title>Document</title>
+</head>
+<style>
+  @import url("/кяр 1 сем/лаба 10/1.css") (min-width:769px) and (max-width:1280px);
+
+  header {
+    text-align: center;
+    font-style: italic;
+    border: 5px solid rgb(37, 17, 109);
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(37, 17, 109);
+    background: rgba(45, 23, 134, 0.895);
+  }
+
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+
+
+  .a2 {
+    height: 450px;
+    width: 360px;
+
+
+  }
+
+
+
+  h2 {
+    text-align: center;
+    color: rgb(117, 95, 225);
+  }
+
+  p {
+    color: rgb(91, 104, 223);
+    font-size: larger;
+  }
+
+
+
+
+  img {
+    max-width: 350px;
+    max-height: 220px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #5145c5;
+
+  }
+
+  @media (max-width:480px) {
+
+
+    .top>li>a {
+      visibility: visible;
+
+    }
+
+    .top>li {
+      display: block;
+      position: relative;
+
+    }
+
+
+
+    .no_submenu {
+      visibility: hidden;
+    }
+
+
+
+
+
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+
+
+    }
+
+    ul li:hover .submenu {
+      display: block;
+
+
+    }
+
+    .submenu {
+      padding: 0;
+
+    }
+
+
+  }
+
+
+
+  @media (min-width:480px) and (max-width:768px) {
+    figcaption {
+      color: red;
+    }
+  }
+
+  body {
+    background-color: aqua;
+
+  }
+
+  .qw {
+    width: 25%;
+  }
+
+  .no_submenu {
+    width: 25%;
+  }
+
+  .rt {
+    width: 100%;
+  }
+
+  ul {
+    list-style: none;
+
+  }
+
+  li {
+    float: left;
+    padding: 0.5%;
+    border: 1px green solid;
+
+
+  }
+
+  .submenu {
+    display: none;
+
+  }
+
+  .gal {
+    margin-top: 100px;
+  }
+
+  a {
+    float: right;
+    visibility: hidden;
+  }
+</style>
+
+<body>
+
+  <header class="header">
+    Flexbox верстка
+  </header>
+  <section>
+    <article class="a1">
+      <p><iframe width="150" height="150" src="https://www.youtube.com/embed/dNhCSC-yJ2A" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </p>
+      <p><iframe width="150" height="150" src="https://www.youtube.com/embed/MAqynh1mC_8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></p>
+      <p><iframe width="150" height="150" src="https://www.youtube.com/embed/vIZs5tH-HGQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></p>
+    </article>
+    <article CLASS="a3">
+      <h4> <audio controls>
+          <source src="/кяр 1 сем/лаба 10/strashnye-zvuki-party-hard.mp3">
+        </audio> </h4>
+      <h4> <audio controls>
+          <source src="/кяр 1 сем/лаба 10/strashnye-zvuki-sirena.mp3">
+        </audio> </h4>
+      <h4> <audio controls>
+          <source src="/кяр 1 сем/лаба 10/strashnye-zvuki-zhenskiy-krik-2.mp3">
+        </audio> </h4>
+    </article>
+    <article class="a2">
+      <h2> Flexbox</h2>
+      <p>Флекс — это не отдельное свойство, но целый модуль, включающий набор свойств. Некоторые из этих
+        свойств добавляются к контейнеру (родительскому элементу, известному как «флекс-контейнер» (flex
+        name, далее по тексту — контейнер)), другие — к дочерним элементам.</p>
+    </article>
+  </section>
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <ul class="top">
+      <li class="qw">Меню<a>&#8801</a>
+        <ul class="submenu">
+          <li class="rt">ячейка 1</li>
+          <li class="rt">ячейка 2</li>
+          <li class="rt">ячейка 3</li>
+        </ul>
+      </li>
+      <li class="no_submenu">ячейка 1</li>
+      <li class="no_submenu">ячейка 2</li>
+      <li class="no_submenu">ячейка 3</li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <div class="gal">
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/1.jpg">
+      <figcaption>Картинка 1</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/wp1843574.jpg">
+      <figcaption>Картинка 2</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/13.jpg">
+      <figcaption>Картинка 3</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/1o0326y.jpg">
+      <figcaption>Картинка 4</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/12.jpeg">
+      <figcaption>Картинка 5</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/11.jpg">
+      <figcaption>Картинка 6</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/eda76173abd18b5535422427bb837211.jpg">
+      <figcaption>Картинка 7</figcaption>
+    </figure>
+    <figure>
+      <img src="/кяр 1 сем/лаба 10/thumb-1920-813259.png">
+      <figcaption>Картинка 8</figcaption>
+    </figure>
+  </div>
+
+</body>
+
+</html>

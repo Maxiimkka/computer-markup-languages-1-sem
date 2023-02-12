@@ -1,0 +1,30 @@
+<?xmlversion "1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="lab12.css"?>
+<EXAM>
+    <EXAMNAME>Предмет</EXAMNAME>
+    <SUBJECT>
+        <NAME>Физика</NAME>
+        <DATE>06.01.2022</DATE>
+        <TIME>13:00</TIME>
+    </SUBJECT>
+    <SUBJECT>
+        <NAME>Линейная алгебра и аналитическая геометрия</NAME>
+        <DATE>11.01.2022</DATE>
+        <TIME>13:00</TIME>
+    </SUBJECT>
+    <SUBJECT>
+        <NAME>Математическиий анализ</NAME>
+        <DATE>15.01.2022</DATE>
+        <TIME>13:00</TIME>
+    </SUBJECT>
+    <SUBJECT>
+        <NAME>Арифметическо-логические основы ВС</NAME>
+        <DATE>19.01.2022</DATE>
+        <TIME>13:00</TIME>
+    </SUBJECT>
+    <SUBJECT>
+        <NAME>Основы алгоритмизации и програмирования</NAME>
+        <DATE>23.01.2022</DATE>
+        <TIME>13:00</TIME>
+    </SUBJECT>
+</EXAM>

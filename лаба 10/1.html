@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("1.css")(min-width:769px) and (max-width:1280px);
+
+        .zag {
+            border: solid 2px rgb(133, 133, 133);
+            text-align: center;
+        }
+
+        .menu div {
+            flex: 33%;
+            text-align: center;
+            border: solid 2px rgb(133, 133, 133);
+        }
+
+        .name {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .block__container {
+            display: flex;
+            flex-flow: row;
+            border: 5px solid green;
+            min-height: 100%;
+            width: 100%;
+
+        }
+
+        .block__column {
+            display: flex;
+            border: 5px solid black;
+            text-align: center;
+            flex: 33%;
+        }
+
+        .block__item {
+            text-align: center;
+            flex: 33%;
+
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+        }
+
+        figcaption {
+            color: green;
+        }
+
+        @media (min-width:480px) {
+
+            .menu {
+                display: flex;
+                flex-flow: row;
+            }
+        }
+
+        @media (max-width:480px) {
+            .menu {
+                display: flex;
+                flex-flow: column;
+            }
+
+        }
+
+        @media (min-width:480px) and (max-width:768px) {
+            figcaption {
+                color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="name">
+        <h1>Flexbox верстка</h1>
+    </header>
+    <div class="block__container">
+        <div class="block__column">
+            <div class="block__item">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/EO8hH_2OwCU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/uPYUgipiFcM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/cXAUxbu6X2E"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="block__column">
+            <div class="block__item">
+                <h1>Flexbox</h1>
+
+                <h2>Терминология</h2>
+
+                <p> Флекс — это не отдельное свойство, но целый модуль, включающий набор свойств. Некоторые из этих
+                    свойств добавляются к контейнеру (родительскому элементу, известному как «флекс-контейнер» (flex
+                    name, далее по тексту — контейнер)), другие — к дочерним элементам (известным как
+                    «флекс-элементы» (flex items, далее по тексту — элементы)).</p>
+
+                <p> «Обычный» макет основан на потоке из блочных и строчных элементов, а флекс-макет — на
+                    «флекс-потоке»
+                    (flex-flow directions). Посмотрите на это изображение из спецификации, демонстрирующее ключевые
+                    идеи, лежащие в основе флекс-макета.
+                    Элементы располагаются вдоль основной (главной) оси (main axis) (от main-start до main-end) или
+                    вдоль поперечной оси (cross axis) (от cross-start до cross-end).</p>
+
+                <p>основная ось — главная ось контейнера, ось, вдоль которой располагаются элементы. Она не
+                    обязательно
+                    является горизонтальной; это зависит от свойства «flex-direction» (направление, см. ниже)
+                    main-start | main-end — элементы располагаются в контейнере от main-start до main-end
+                    основной размер (main size) — ширина или высота элемента в зависимости от основного измерения
+                    (main
+                    dimension), основной размер элемента
+                    поперечная ось — ось, перпендикулярная основной. Ее направление зависит от направления основной
+                    оси
+                    cross-start | cross-end — строки контейнера заполняются элементами, которые располагаются от
+                    cross-end до cross-start
+                    поперечный размер (cross size) — ширина или высота элемента в зависимости от основного измерения
+                </p>
+
+            </div>
+        </div>
+        <div class="block__column">
+            <div class="block__item">
+                <audio controls="controls" src="/КЯР/10/9916-oplaty-pokupki-kartoj-apple-pay-uspeshno.mp3"></audio>
+                <audio controls="controls" src="/КЯР/10/d0bcd0b5d0bbd0bad0b8d0b9-d0b4d0bed0b6d0b4d18c.mp3"></audio>
+                <audio controls="controls" src="/КЯР/10/muzhskoj-smeh.mp3"></audio>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="zag">заголовок</div>
+    <div class="menu">
+        <div>ячейка 1</div>
+        <div>ячейка 2</div>
+        <div>ячейка 3</div>
+    </div>
+    <div class="gal">
+        <figure>
+            <img src="1.jpg">
+            <figcaption>Картинка номер 1</figcaption>
+        </figure>
+        <figure>
+            <img src="2.jpg">
+            <figcaption>Картинка номер 2</figcaption>
+        </figure>
+        <figure>
+            <img src="3.jpg">
+            <figcaption>Картинка номер 3</figcaption>
+        </figure>
+        <figure>
+            <img src="4.jpg">
+            <figcaption>Картинка номер 4</figcaption>
+        </figure>
+        <figure>
+            <img src="5.jpg">
+            <figcaption>Картинка номер 5</figcaption>
+        </figure>
+        <figure>
+            <img src="6.jpg">
+            <figcaption>Картинка номер 6</figcaption>
+        </figure>
+        <figure>
+            <img src="7.jpg">
+            <figcaption>Картинка номер 7</figcaption>
+        </figure>
+        <figure>
+            <img src="8.jpg">
+            <figcaption>Картинка номер 8</figcaption>
+        </figure>
+    </div>
+
+</body>
+
+</html>

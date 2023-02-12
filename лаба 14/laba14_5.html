@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABA14_2</title>
+    <link href="laba14_1.css" rel="stylesheet">
+    </linl>
+</head>
+
+<body>
+
+    <svg width="1000" height="600">
+        <linearGradient id="MyGradient1">
+            <stop offset="0%" stop-color="green" />
+            <stop offset="100%" stop-color="orange" />
+        </linearGradient>
+
+        <circle id="circle" cx="50" cy="50" r="40" fill="blue">
+            <animate attributeName="fill" from="blue" to="red" dur="3s" begin="click" fill="freeze" />
+        </circle>
+        <rect x="100" y="10" width="80" height="80" fill="red" stroke-dashoffset="314" stroke-dasharray="0, 314"
+            stroke="purple" stroke-width="8">
+            <animate attributename="stroke-dasharray" dur="4s" begin="click" values="0,314;314,0" fill="freeze" />
+        </rect>
+
+        <ellipse cx="250" cy="50" rx="60" ry="40" fill="green">
+            <animate attributename="fill" from="green" to="blue" dur="6s" begin="click" repeatcount="indefinite" />
+            <animate attributename="fill" from="blue" to="green" dur="6s" begin="click" repeatcount="indefinite" />
+        </ellipse>
+        <polygon points="350 20 400 90 300 90" fill="url(#MyGradient1)" stroke="rgb(0, 0, 0)" stroke-width="6">
+            <animate attributename="stroke" from="rgb(0, 0, 0)" to="red" begin="click" dur="3s" />
+        </polygon>
+        <line x1="0" y1="110" x2="200" y2="110" stroke="purple" stroke-width="3" />
+        <line x1="200" y1="110" x2="150" y2="140" stroke="purple" stroke-width="3" />
+        <line x1="150" y1="140" x2="400" y2="140" stroke="purple" stroke-width="3" />
+    </svg>
+
+
+</body>
+
+</html>

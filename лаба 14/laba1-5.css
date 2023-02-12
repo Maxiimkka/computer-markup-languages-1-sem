@@ -1,0 +1,37 @@
+@charset "UTF-8";
+header {
+  justify-content: center;
+  padding: 40px;
+  background-color: green;
+  color: #fff; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff; }
+
+aside {
+  background: #f0f0f0;
+  padding: 10px;
+  width: 270px;
+  float: right; }
+
+figure {
+  background: #5f6a72;
+  /* Цвет фона */
+  padding: 10px;
+  /* Поля вокруг */
+  display: block;
+  /* Блочный элемент */
+  width: 1320px;
+  /* Ширина */
+  float: left;
+  /* Блоки выстраиваются по горизонтали */
+  margin: 0 10px 10px 0;
+  /* Отступы */
+  text-align: center;
+  /* Выравнивание по центру */ }
+
+/*# sourceMappingURL=laba1-5.css.map */

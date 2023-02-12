@@ -1,0 +1,22 @@
+<?xmlversion "1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="XSLTFile2.xslt"?>
+<Students>
+    <student>
+        <name>Соловей Руслан</name>
+        <math>7</math>
+        <hist>9</hist>
+        <rus>3</rus>
+    </student>
+    <student>
+        <name>Навойчик Влад</name>
+        <math>2</math>
+        <hist>6</hist>
+        <rus>10</rus>
+    </student>
+    <student>
+        <name>Гордей Максим</name>
+        <math>8</math>
+        <hist>4</hist>
+        <rus>7</rus>
+    </student>
+</Students>
