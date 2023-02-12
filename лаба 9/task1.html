@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        div {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5% 6.5%;
+            grid-template-rows: 15%;
+            grid-gap: 16px;
+        }
+
+        .bordered {
+            border: 2px solid black;
+        }
+
+        .verthead_1 {
+            grid-row: 4/6;
+            grid-column: 2/3;
+        }
+
+        .verthead_2 {
+            grid-row: 4/6;
+            grid-column: 12/13;
+
+        }
+
+        .table_1 {
+            transform: translate(30px);
+            grid-row: 4/6;
+            grid-column: 3/5;
+        }
+
+        .table_2 {
+
+            transform: translate(30px);
+            grid-row: 4/6;
+            grid-column: 5/7;
+        }
+
+        .table_3 {
+            transform: translate(-30px);
+
+            grid-row: 4/6;
+            grid-column: 8/10;
+        }
+
+        .table_4 {
+            transform: translate(-30px);
+            grid-row: 4/5;
+            grid-column: 10/12;
+
+        }
+
+        .table_5 {
+            transform: translate(-30px);
+            grid-row: 5/6;
+            grid-column: 10/12;
+        }
+
+        .text {
+            padding-left: 25%;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+
+        <div class="verthead_1 text bordered" style="font-size: 20px;"> Grid сетка </div>
+        <div class="verthead_2 text bordered" style="font-size: 20px;"> Skeleton </div>
+        <div class="table_1 bordered">Grid-верстка — это разбиение макета на области.Сетка (grid)
+            представляет собой совокупность пересекающихся горизонтальных и
+            вертикальных линий, делящих пространство grid-контейнера на области
+            сетки, в которые могут быть помещено содержимое. </div>
+        <div class="table_2 bordered">элемент с классом grid становится контейнером
+            сетки, его потомки элементами сетки и занимает 100% доступной ширины.Свойства grid-template-columns и
+            grid-template-rows устанавливают размер
+            каждой колонки и каждой строки сетки. </div>
+        <div class="table_3 bordered">Система Skeleton — адаптивная система модульной верстки вебстраниц. Система
+            позволяет
+            сверстать сетчатый макет структурировав
+            контент страницы в несколько колонок на планшетных устройствах,
+            ноутбуках и компьютерах.</div>
+        <div class="table_4 bordered">Чтобы начать работу, необходимо посетить сайт getskeleton.com и
+            нажать кнопку Download. </div>
+        <div class="table_5 bordered">В каталоге css расположены файлы normalize.css,
+            который сбрасывает базовые стили CSS </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

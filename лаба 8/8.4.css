@@ -1,0 +1,59 @@
+ul.ab {
+  display: inline-block;
+  display: none;
+  width: 80px;
+  height: 20px;
+  margin-left: -100px;
+  margin-top: 21px;
+}
+
+
+ul.ab>li {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li.it>ul.ab>li>a {
+  display: block;
+  text-decoration: none;
+  color: black;
+
+}
+
+li.it>ul.ab>li>a:hover {
+  text-decoration: none;
+  background-image: none;
+}
+
+
+
+ul.nav>li.it:hover>ul.ab {
+  display: block;
+  position: fixed;
+
+
+
+}
+
+li.it>a {
+  color: black;
+}
+
+ul.nav>li {
+  position: relative;
+  width: 80px;
+  height: 20px;
+
+}
+
+ul {
+
+  list-style: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}

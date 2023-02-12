@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            grid-gap: 220px;
+        }
+
+        .divNav {
+
+            background: rgb(0, 230, 0);
+            grid-row: 1/4;
+            grid-column: 1/3;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+        .divContentHeader {
+            transform: translate(70px);
+            background: rgb(0, 230, 0);
+            grid-row: 1/3;
+            grid-column: 2/7;
+        }
+
+        .divContentArticle {
+            transform: translate(70px);
+            background: rgb(0, 230, 0);
+            grid-row: 3/5;
+            grid-column: 2/5;
+            margin-top: -195px;
+            margin-bottom: 270px;
+            margin-right: -195px;
+        }
+
+        .divContentAside {
+            transform: translate(70px);
+            background: rgb(0, 230, 0);
+            grid-row: 3/5;
+            grid-column: 5/7;
+            margin-top: -195px;
+            margin-bottom: 270px;
+        }
+
+        .divContentFooter {
+            background: rgb(0, 230, 0);
+            grid-row: 5/6;
+            grid-column: 1/7;
+            text-align: center;
+            font-size: large;
+            padding-top: 10px;
+            margin-top: -480px;
+            margin-bottom: 430px;
+            margin-right: -72px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="divNav"> <a href="task1.html">Nav </a></div>
+        <div class="divContentHeader"><a href="task2.html">ContentHeader</a></div>
+        <div class="divContentArticle"><a href="task3.html">ContentArticle</a></div>
+        <div class="divContentAside">ContentAside</div>
+        <div class="divContentFooter">ContentFooter</div>
+    </div>
+
+</body>
+
+</html>

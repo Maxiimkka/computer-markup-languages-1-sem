@@ -1,0 +1,28 @@
+   .nav {
+       list-style-type: none;
+   }
+
+   .nav a {
+       display: block;
+   }
+
+   .a1:link {
+       color: red;
+       text-decoration: none;
+   }
+
+   .a2 {
+       color: blue;
+   }
+
+   .a2:visited {
+       color: #8B0000;
+   }
+
+   .a3:hover {
+       color: green;
+   }
+
+   .a4:active {
+       color: rgb(184, 134, 11);
+   }

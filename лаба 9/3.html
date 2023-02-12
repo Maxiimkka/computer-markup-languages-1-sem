@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 20px 20px 20px;
+      grid-template-rows: 20px;
+      grid-gap: 220px;
+    }
+
+    div {
+      font-size: 18px;
+      text-align: center;
+    }
+
+
+
+    .divNav {
+
+      background: gray;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      margin-top: 25px;
+    }
+
+    .divNav1 {
+      transform: translate(270px);
+      background: gray;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      margin-top: 25px;
+    }
+
+    .divNav2 {
+      transform: translate(1020px);
+      background: gray;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      margin-top: 25px;
+      padding-right: 60px;
+      margin-right: 60px;
+    }
+
+    .divContentHeader {
+      background: gray;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 8;
+      text-align: center;
+      font-size: large;
+      padding-top: -10px;
+    }
+
+    .divContentFooter {
+      background: gray;
+      grid-row-start: 5;
+      grid-row-end: 7;
+      grid-column-start: 1;
+      grid-column-end: 8;
+      text-align: center;
+      font-size: large;
+      margin-top: -435px;
+      margin-bottom: 455px;
+      padding-top: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+
+    <div class="divContentHeader"><a href="task2.html">Задание 2</a></div>
+    <div class="divNav"> <a href="task1.html">Задание 1 </a></div>
+    <div class="divNav1"> <a href="task1.html">Задание 1 </a></div>
+    <div class="divNav2"> <a href="task1.html">Задание 1 </a></div>
+    <div class="divContentFooter"><a href="task2.html">Задание 2</a></div>
+
+
+
+  </div>
+</body>
+
+</html>

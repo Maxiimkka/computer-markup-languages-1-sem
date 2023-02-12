@@ -1,0 +1,88 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="CSS08-01.css" rel="stylesheet" />
+    <style>
+        @keyframes slaid {
+        0%, 20%, 40%, 60%, 80%, 100% {
+        background-repeat: no-repeat;
+        border: solid 2px black;
+        background-size: 100%;
+        }
+        0% {
+        background-image: url("newпанк1.jpg");
+        }
+        20% {
+        background-image: url("newпанк2.jpg");
+        }
+        40% {
+        background-image: url("newпанк3.jpg");
+        }
+        60% {
+        background-image: url("newпанк4.jpg");
+        }
+        80% {
+        background-image: url("newпанк5.jpg");
+        }
+        100% {
+        background-image: url("newпанк1.jpg");
+        }
+        }
+        
+        .slaidshow { 
+        border: solid 2px black;
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        animation: slaid 5s infinite;
+        }</style>
+</head>
+
+<body>
+<table> <tr><th><a href="#task1" >ЗАДАНИЕ 1</a></th> <th><a href="#task2">ЗАДАНИЕ 2</a></th><th><a href="#task3">ЗАДАНИЕ 3</a></th><th><a href="#task4">ЗАДАНИЕ 4</a></th><th><a href="#task5">ЗАДАНИЕ 5</a></th> </tr>
+<tr> </tr>  </table>
+     <h1><a id="task1">ЗАДАНИЕ 1--></a></h1>   
+
+    <div class="d1"><span> элемент 1 </span> </div>
+    <div class="d2"><span> элемент 2 </span></div>
+    <div class="d3"><span>элемент 3 </span></div>
+    <div class="d4"><span> элемент 4</span> </div><br/>
+
+     <h1><a id="task2">ЗАДАНИЕ 2--></a></h1> 
+        <div class="zad2_1"><span>Изображение 1</span></div>
+        <div class="zad2_2" ><span>Изображение 2</span></div>
+        <div class="zad2_3"><span>Изображение 3</span></div>
+        <div class="zad2_4"><span>Изображение 4</span></div>
+
+    <h1><a id="task3">ЗАДАНИЕ 3--></a> </h1> 
+
+        <br/>
+        <div style="width: 300px ; height: 300px ;" class="div"><span class=" chengeColor"> Староста ЛУЧШИЙ !!! <br> 7-ой ГРУППЫ </span></div> 
+
+    <h1><a id="task4">ЗАДАНИЕ 4--></a> </h1> 
+
+      <br> 
+        <div class="picture"> </div>
+        <div class="slaidshow"></div>
+        
+      <h1><a id="task5">ЗАДАНИЕ 5--></a> </h1>  
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+        <div class="task5" id="block1"></div>
+        <div class="task5" id="block2"></div>
+        <div class="task5" id="block3"></div>
+        <div class="task5" id="block4"></div>
+
+</body> 
+
+</html>

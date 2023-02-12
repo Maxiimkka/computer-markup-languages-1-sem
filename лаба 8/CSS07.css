@@ -1,0 +1,424 @@
+table {
+    border: 2px solid black;
+    background-color: yellow;
+    border-spacing: 1px;
+}
+
+th {
+    padding: 20px 90px;
+    border: 2px solid black;
+}
+
+
+div {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px 20px;
+    position: relative;
+
+}
+
+
+
+figure {
+    display: inline-block;
+    perspective: 400px;
+}
+
+
+
+p {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 20px 20px;
+    border: solid 5px black;
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+.a1:hover {
+    background-color: rgb(5, 1, 8);
+}
+
+#b1:hover {
+    color: aliceblue;
+}
+
+.a2:hover {
+    outline: yellow solid 4px;
+    border: red solid 4px;
+}
+
+.a3:hover {
+
+    border-top: 4px solid rgb(5, 67, 9);
+    border-bottom: 4px solid rgb(5, 67, 9);
+    border-left: white;
+    border-right: white;
+}
+
+.a4:hover {
+    border-left: 4px solid rgb(18, 7, 78);
+    border-right: 4px solid rgb(18, 7, 78);
+    border-top: white;
+    border-bottom: white;
+}
+
+.a5:hover {
+    background: radial-gradient(yellow, rgb(251, 114, 237), rgb(97, 174, 229)100% 100%, rgb(97, 174, 229) 0% 100%, rgb(92, 166, 218) 100% 0%, rgb(97, 174, 229) 100% 0%);
+}
+
+.d1:hover {
+    transform: scale(0.5);
+}
+
+.d2:hover {
+    transform: rotate(45deg);
+}
+
+.d3:hover {
+    transform: translate(50px);
+}
+
+.d4:hover {
+    transform: rotate(-20deg);
+}
+
+#div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+    height: 400px;
+}
+
+.f5 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: perspective(900px) rotateY(43deg);
+    animation: move1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.f6 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    transform: perspective(900px) rotateY(43deg);
+    animation: move2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.f7 {
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    transform: perspective(900px) rotateY(43deg);
+    animation: move3;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.f8 {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    transform: perspective(900px) rotateY(43deg);
+    animation: move4;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes move1 {
+    0% {
+        transform: perspective(900px) rotateY(43deg);
+    }
+
+    25% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(99px) translateY(80px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: perspective(900px) rotateY(43deg);
+    }
+
+    25% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(99px) translateY(80px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        filter: blur(10px);
+    }
+}
+
+@keyframes move3 {
+    0% {
+        transform: perspective(900px) rotateY(43deg);
+    }
+
+    25% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(99px) translateY(80px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        filter: grayscale(1);
+    }
+}
+
+@keyframes move4 {
+    0% {
+        transform: perspective(900px) rotateY(43deg);
+    }
+
+    25% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(99px) translateY(80px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        filter: invert(1);
+    }
+}
+
+.f1 {
+    transform: rotateX(45deg);
+}
+
+.f2 {
+    transform: rotateY(30deg);
+
+}
+
+.f3 {
+    transform: rotateX(-45deg);
+}
+
+.f4 {
+    transform: rotateY(-30deg);
+}
+
+.div {
+    background-color: rgb(255, 0, 0);
+    transition: color 5s linear;
+}
+
+.div:hover {
+    color: whitesmoke;
+}
+
+.picture {
+
+    width: 500px;
+    height: 500px;
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border: solid 5px black;
+
+
+}
+
+@keyframes image {
+    0% {
+        background-image: url("1.jpg");
+    }
+
+    20% {
+        background-image: url("2.jpg");
+    }
+
+    40% {
+        background-image: url("3.jpg");
+    }
+
+    60% {
+        background-image: url("4.jpg");
+    }
+
+    80% {
+        background-image: url("5.jpg");
+    }
+
+    100% {
+        background-image: url("1.jpg");
+    }
+}
+
+
+.task6 {
+    background-image: url("jjj.jpg");
+    margin: 60px 260px 0 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+@keyframes block_1 {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 200px;
+    }
+}
+
+#block1 {
+    animation-name: block_1;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes block_2 {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 50px;
+    }
+}
+
+#block2 {
+    animation-name: block_2;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes block_3 {
+    0% {
+        left: -120px;
+        top: 0;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+#block3 {
+    animation-name: block_3;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes block_4 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 200px;
+        top: 0;
+    }
+
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        left: 0;
+        top: 200px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+#block4 {
+    animation-name: block_4;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes block_5 {
+    0% {
+        left: 0;
+
+        transform: skew(0deg);
+
+    }
+
+    100% {
+        left: 90%;
+        border-radius: 200px;
+        transform: skew(45deg);
+    }
+}
+
+#block5 {
+    animation-name: block_5;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chenge {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+h1 {
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-name: chenge;
+    display: block;
+    animation-iteration-count: infinite;
+    text-shadow: 9px 9px 9px pink;
+}

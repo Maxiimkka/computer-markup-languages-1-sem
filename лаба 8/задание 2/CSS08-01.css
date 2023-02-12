@@ -1,0 +1,133 @@
+table { border: 2px solid black;
+        background-color: yellow;
+        border-spacing: 1px ;
+        }
+th { padding: 20px 90px ;
+     border: 2px solid black;}
+
+
+div{
+    width: 200px;;
+    height: 200px;
+    display: inline-block;
+    margin: 20px 20px  ;
+    border: solid 5px black ;
+    
+}
+.d1:hover{transform:scale(0.5);}
+.d2{transform:rotate(45deg);}
+.d3{transform:translate(50px) ;}
+.d4:hover{transform:rotate(-20deg);}
+
+.zad2_1 {
+        transform: perspective(240px) rotateX(25deg);    
+ }
+.zad2_2 {
+    transform: perspective(240px) rotateY(15deg);    
+}
+.zad2_3 {
+    transform: perspective(240px) rotateX(-15deg);    
+}
+.zad2_4 {
+    transform: perspective(240px) rotateY(-15deg);    
+}
+.chengeColor{  transition: color 2s linear;}
+.chengeColor:hover{ color:white; }
+
+.div {
+background-color: rgb(255,0,0);
+transition: background-color 1s linear;
+}
+.picture { 
+    
+    width: 500px;
+    height: 500px;
+    /*border : 1px solid pink ;*/ 
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite ;
+   
+}
+@keyframes image { 
+    0% {  background-image: url("newпанк1.jpg");}
+    
+    20% {  background-image: url("newпанк2.jpg");}
+   
+    40% {  background-image: url("newпанк3.jpg");} 
+    
+    60% {  background-image: url("newпанк4.jpg");}
+    
+    80% {  background-image: url("newпанк5.jpg");}
+    100% {  background-image: url("newпанк1.jpg");}
+}
+
+
+.task5 {
+    border: 0 ; 
+    background-image: url("jjj.jpg") ; 
+    margin: 60px 260px 0 0 ; 
+    width: 100px;
+    height: 100px;
+}
+    @keyframes block_1{ 
+        0% { left: 0px;}
+        100% {  left: 200px;}
+      }
+    #block1 { animation-name: block_1 ;
+              animation-duration: 5s;
+              position: relative;
+              animation-iteration-count: infinite ;
+    }
+
+
+    @keyframes block_2{ 
+        0% { top: 0px;}
+        100% {  top: 200px;}
+      }
+    #block2 { animation-name: block_2 ;
+              animation-duration: 5s;
+              position: relative;
+              animation-iteration-count: infinite ;
+    }
+
+
+    @keyframes block_3{ 
+        0% { left: 0px; top:0px;}
+        40% { left: 90px; top:140px;}
+        70% { left: 230px; top:30px;}
+        100% {  left: 300px; top:300px;} 
+      }
+    #block3 { animation-name: block_3 ;
+              animation-duration: 5s;
+              position: relative;
+              animation-iteration-count: infinite ;
+    }
+
+
+    @keyframes block_4{ 
+        0% { left: 0; top: 0; }
+        25% { left: 200px; top: 0; }
+        50% { left: 200px; top: 200px; }
+        75% { left: 0; top: 200px; }
+        100% { left: 0; top: 0; }        
+      }
+    #block4 { animation-name: block_4 ;
+              animation-duration: 5s;
+              position: relative;
+              animation-iteration-count: infinite ;
+    }
+h1 { 
+    display:block ;
+    opacity: .6;
+    text-shadow: 9px 9px 9px pink;
+
+}
+
+span{ 
+    color: black ; 
+    display: block;
+    text-align:center;
+    padding-top: 40%;
+    font-size: x-large;
+    
+}
